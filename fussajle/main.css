@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica";
+}
+
+body {
+    background-color: #fcfcfc;
+    width: 100%;
+    box-sizing: border-box; /* css calculates width to be 100% + padding, this parameter sets width 100% to include padding so the header doesn't bleed past the html tag */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #fcfcfc;
+}
+
+/* header */
+
+#header {
+    font-size: 3rem;
+    width: 100vw;
+    height: 4.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.flag-container {
+    width: calc(2.75em + 10px);
+    height: calc(2.75em + 10px);
+    background-color: #fcfcfc;
+    border-radius: 50%;
+}
+
+#flag {
+    width: 2.75em;
+    height: 2.75em;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+#title {
+    margin-left: 0.5em;
+}
+
+#edit-button {
+    font-size: 0.5em;
+    margin-left: calc(100vw - 31.5em);  /* for edit button to be always on the right side of the screen relative to the vw*/
+    width: 3.3em;
+    height: 1.85em;
+    border-radius: 5px;
+}
+
+#edit-button:hover {
+    cursor: pointer;
+}
+
+/* tabs */
+
+.tabs {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 2.3em;
+    display: flex;
+}
+
+.tabs li {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.tabs div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-tab-content] {
+    display: none;
+    font-size: 1.25rem;
+    padding: 1em 4em 1em 1em;
+    line-height: 1.3;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.learn-button {
+    font-size: inherit;
+    width: 8em;
+    height: 2.4em;
+    background-color: rgb(0, 149, 255);
+    color: rgb(248, 248, 248);
+    border-radius: 5px;
+}
+
+.learn-button:hover {
+    cursor: pointer;
+}

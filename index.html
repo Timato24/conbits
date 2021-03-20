@@ -2,48 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConBits</title>
+    <title>Fussajle - ConBits</title>
     <link rel="stylesheet" href="main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js" integrity="sha512-mMe7BAZPOkGbq+zhRBMNV3Q+5ZDzcUEOJoUYXbHpEcODkDBYbttaW7P108jX66AQgwgsAjvlP4Ayb/XLJZfmsg==" crossorigin="anonymous"></script> <!-- Colorthief is a free library that can return the dominant color of an image, useful for setting background colors based on flags -->
-    <script src="app.js"></script>
+    <link rel="icon" href="images/cb-ico.ico">
 </head>
-<body onload="setBgColors()"> <!-- function that sets certain background colors using Colorthief is called on load -->
-    <div id='header'>
-        <img src="images/ushankacat.jpg" alt="Flag" id="flag">
-        <h1 id="title">Fussajle</h1>
-    </div>
-    <ul class="tabs">
-        <li data-tab-target="#overview">
-            <div class="tab-button" id='default-button'>
-                Overview
+<body>
+    <h1>Featured Conlangs</h1>
+        <button class="conlang-button" onclick="location.href='fussajle'">
+            <div class="flag-container">
+                <img class="flag" src="fussajle/images/tree.png" alt="Fussajle pfp">
             </div>
-        </li>
-        <li data-tab-target="#learn">
-            <div class="tab-button">
-                Learn
-            </div>
-        </li>
-        <li data-tab-target="#more">
-            <div class="tab-button">
-                More
-            </div>
-        </li>
-    </ul>
-    <div id="overview" data-tab-content class="active"> <!-- Active role sets default tab 'overview' to be shown when page loads. Hidden when other tabs are clicked. -->
-        Fússajle is a romance-inspired conlang blah balh bnalhlh blah Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Quisque eu libero egestas, finibus ipsum vel,
-        ultrices urna. Quisque sollicitudin, neque vel tristique mattis, felis nibh tempor velit,
-        non finibus leo turpis eget turpis. Phasellus dapibus quam at ultricies rhoncus. Integer
-        quis ante molestie, dictum eros et, facilisis justo. Suspendisse faucibus velit ac justo
-        vehicula pharetra. Nullam faucibus arcu erat, ut ullamcorper neque ullamcorper
-        nec. Pellentesque dignissim purus ut condimentum rutrum.
-    </div>
-    <div id="learn" data-tab-content>
-        Learn blah blah blah
-    </div>
-    <div id="more" data-tab-content>
-        Something something something.
-    </div>
+            <p style="font-size: 1.25em;">Fussajle</p>
+        </button>
 </body>
 </html>
